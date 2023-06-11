@@ -1,0 +1,14 @@
+.datagrid-table-horizontal-scrollbar {
+    bottom: 0;
+    display: block;
+    height: 20px;
+    overflow-x: auto;
+
+    width: 85%;
+    z-index: 5;
+}
+
+.datagrid-table-horizontal-scrollbar__empty-container {
+    height: 1px;
+}
+

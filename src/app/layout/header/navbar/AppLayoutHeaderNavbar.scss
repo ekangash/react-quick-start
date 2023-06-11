@@ -1,0 +1,45 @@
+.navbar-react.navbar {
+    padding: 1rem 3.5rem;
+}
+
+.navbar-react {
+    .nav-link {
+        text-align: center;
+        padding: 8px 16px !important;
+    }
+
+    .nav-item {
+        height: 64px;
+        display: flex;
+        align-content: center;
+        flex-wrap: nowrap
+    }
+
+    .nav-item.dropdown:hover {
+        .dropdown-menu {
+            display: block;
+            background-color: var(--dark);
+            border: none;
+
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+    }
+
+    .dropdown-menu .dropdown-item {
+        color: rgba(255,255,255,0.5);
+    }
+
+    .nav-link.dropdown-toggle:after {
+        content: none;
+    }
+
+    .dropdown-menu a.dropdown-item:hover, .dropdown-menu a.dropdown-item:focus {
+        color: rgba(255,255,255,0.75);
+        background-color: var(--primary);
+    }
+}
+
+.navbar-brand img{
+    max-width: 56px;
+}

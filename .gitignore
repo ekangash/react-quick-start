@@ -1,0 +1,9 @@
+# Файлы IDE
+.idea
+
+# Папки и файлы компонентов
+/node_modules
+/dist
+
+#tests
+__tests__/_coverage/*

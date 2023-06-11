@@ -1,0 +1,59 @@
+.bottom-drawer-container {
+  max-height: calc(100vh - 64px - 58px);
+  height: calc(100vh - 64px - 58px);
+  padding-bottom: 30px;
+}
+
+.bottom-drawer {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 100vw;
+  overflow: hidden;
+  transition-property: height;
+  transition-duration: 1.5s;
+}
+
+.bottom-drawer .drawer-content {
+  padding-left: 3.5rem;
+  height: 176px;
+  overflow-x: hidden;
+}
+
+.bottom-drawer .drawer-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-drawer-container {
+  transition-property: padding-bottom;
+  transition-duration: 1.5s;
+  padding-left: 3.5rem;
+}
+
+.drawer-icon {
+  color: var(--secondary);
+  align-self: center;
+  cursor: pointer;
+}
+
+.right-drawer {
+  height: calc(100% + 16px);
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  position: relative;
+  top: -16px;
+  right: -15px;
+  display: flex;
+  overflow: hidden;
+  transition-property: width;
+  transition-duration: 1.5s;
+  .drawer-content {
+    overflow-x: hidden;
+  }
+}
+
+.drawer-content {
+  overflow: auto;
+}

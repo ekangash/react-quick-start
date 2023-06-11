@@ -1,0 +1,125 @@
+
+$select-focused-outline: 0 0 0 0.2rem rgba(46, 150, 129, 0.25);
+$select-control-width: 26px;
+
+.select {
+    width: 100%;
+    min-width: 100px;
+
+    &_focused {
+        .select-input {
+            color: var(--bs-dark);
+            background-color: var(--bs-white);
+            border-color: #70d3bf;
+            outline: 0;
+            box-shadow: $select-focused-outline;
+
+            &.is-invalid {
+                border-color: var(--danger);
+                box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+            }
+        }
+    }
+
+    &__input {
+        position: relative;
+
+        &:disabled {
+            pointer-events: none;
+        }
+
+        .select-input {
+
+            &__overflow-hidden {
+                overflow: hidden;
+                height: 1.6em;
+                box-sizing: border-box;
+                width: 100%;
+            }
+
+            &__scroll-block {
+                display: flex;
+                align-items: start;
+                height: 4em;
+                overflow-x: auto;
+            }
+
+            &__value {
+                display: inline-block;
+                min-width: 5px;
+                width: 5px;
+                outline: 0;
+                line-height: 1em;
+                padding: 0;
+                border: none;
+                background-color: inherit;
+            }
+
+            &__values {
+                &_multiple {
+                    background-color: #bfc9ca;
+                    margin-right: 3px;
+                    padding: 2px 5px;
+                    display: inline-flex;
+                }
+
+                &_disabled {
+                    background-color: #D5D8DC;
+                }
+            }
+        }
+
+        &::after {
+            display: none!important;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        min-height: 20px;
+        overflow-y: auto;
+
+        .select-list {
+            &__item {
+                &.disabled.active {
+                    background-color: #D4E6F1;
+                }
+
+                &_highlight {
+                    background-color: #E9ECEF;
+                }
+            }
+        }
+    }
+
+    &__controls {
+        display: flex;
+        margin-right: -5px;
+    }
+
+    &__control {
+        transition: ease-in-out 0.1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $select-control-width;
+        text-align: center;
+        vertical-align: top;
+        color: var(--secondary);
+
+        &_delete {
+            &:hover {
+                color: var(--danger);
+            }
+        }
+
+        &_dropdown {
+            border-left: 1px solid #ced4da;
+            margin: -0.1rem 0;
+
+            &:hover {
+                color: var(--dark);
+            }
+        }
+    }
+}

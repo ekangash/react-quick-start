@@ -1,0 +1,326 @@
+
+.datagrid-table {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(72, 94, 144, 0.16);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(28, 39, 60, 0.05);
+    overflow-x: auto;
+    width: 100%;
+    font-size: 13px;
+}
+
+.datagrid-table.hide-resize {
+    overflow-x: hidden;
+}
+
+.datagrid-table .table thead tr td input {
+    font-size: 13px;
+}
+
+.datagrid-table .table thead tr td select {
+    height: 24px;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 100%;
+}
+
+.datagrid-table .table tbody tr.selected {
+    background-color: rgba(225, 225, 225, .7);
+}
+
+.datagrid-table .table thead tr td input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2.8px rgba(46, 150, 128, .25);
+    outline: 0;
+}
+
+.datagrid-table .table {
+    background: rgb(255, 255, 255);
+    border: none;
+    color: rgb(34, 50, 67);
+}
+
+.table.datagrid-table {
+    margin-bottom: 0;
+    border: 0;
+}
+
+.table.datagrid-table thead {
+    border: 0;
+}
+
+.table.datagrid-table thead tr:first-child {
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+}
+
+.table.datagrid-table thead tr:not(:first-child) td {
+    padding: 4px 8px;
+}
+
+.table.datagrid-table tbody {
+    border: 1px solid rgba(72, 94, 144, 0.16);
+    border-radius: 3px;
+}
+
+.datagrid-table thead > tr > th {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+.datagrid-table thead > tr > td {
+    background-color: rgb(247, 247, 247);
+    border-color: rgb(247, 247, 247);
+    padding: 0.5rem;
+}
+
+.card .summary {
+    font-size: 13px;
+    padding: 4px;
+}
+
+.datagrid-table thead tr:last-child {
+    border-bottom: 2px solid rgb(234, 234, 234);
+}
+
+.datagrid-table thead tr > th > a {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.datagrid-table thead tr > th > a:hover {
+    text-decoration: none;
+}
+
+.datagrid-table tr:first-child td > a:after {
+    color: rgb(255, 255, 255);
+}
+
+.datagrid-table tbody tr td {
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+.datagrid-table thead th {
+    white-space: nowrap;
+}
+
+.datagrid-table .form-control {
+    height: auto;
+    padding: 2px 8px;
+}
+
+.datagrid-table.first-narrow tr th:first-child {
+    text-align: center;
+    width: 70px;
+}
+
+.datagrid-table.first-narrow tr th:first-child input {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.datagrid-table.first-narrow tr td:first-child {
+    text-align: center;
+}
+
+.datagrid-table .summary {
+    font-size: 13px;
+    padding: 7px 14px;
+}
+
+.datagrid-table .datagrid-table-row_delete {
+    background: #e9ecef;
+}
+
+/* Actions */
+
+.datagrid-table tbody tr td:nth-child(n+2):last-child a {
+    color: rgb(34, 50, 67);
+    font-size: 14px;
+    margin-right: 2px;
+}
+
+.datagrid-table tbody tr td:nth-child(n+2):last-child a:hover {
+    color: var(--primary);
+}
+
+.datagrid-table tbody tr td a .simple-link {
+    color: var(--primary);
+    font-size: 16px;
+    margin-right: 2px;
+    text-decoration: underline;
+}
+
+.datagrid-table .paginator-wrapper {
+    text-align: left;
+}
+
+.datagrid-table .paginator-wrapper .pagination .next > span,
+.datagrid-table .paginator-wrapper .pagination .next > a {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.datagrid-table .paginator-wrapper .pagination .next > span,
+.datagrid-table .paginator-wrapper .pagination .prev > span {
+    background-color: var(--secondary);
+}
+
+.datagrid-table .paginator-wrapper .pagination .active > a {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+table {
+    border-spacing: 0;
+}
+
+table {
+    clear: both;
+    max-width: none;
+}
+
+table td,
+table th {
+    box-sizing: content-box;
+}
+
+table td.dataTables_empty,
+table th.dataTables_empty {
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    color: #212529;
+}
+
+.datagrid-container-shadow {
+    position: relative;
+}
+
+.table .empty {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.datagrid-container-shadow:after {
+    background-color: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.datagrid-container-loader {
+    -webkit-animation: spinner-border 1.25s linear infinite;
+    animation: spinner-border 1.25s linear infinite;
+    border: 0.25em solid currentColor;
+    border-radius: 50%;
+    border-right-color: transparent;
+    color: var(--primary);
+    display: block;
+    height: 2rem;
+    left: calc(50% - 10px);
+    margin: 15px auto;
+    position: absolute;
+
+    top: calc(50% - 30px);
+    vertical-align: text-bottom;
+    width: 2rem;
+    z-index: 1000;
+}
+
+.pagination {
+    border-radius: 4px;
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.pagination > li {
+    display: inline;
+}
+
+.pagination > li > a, .pagination > li > span {
+    border: 1px solid rgb(221, 221, 221);
+    color: rgb(90, 115, 142);
+    float: left;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin-left: -1px;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(221, 221, 221);
+    color: rgb(35, 82, 124);
+    z-index: 2;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: rgb(90, 115, 142);
+    border-color: rgb(51, 122, 183);
+    color: rgb(255, 255, 255);
+    cursor: default;
+    z-index: 3;
+}
+
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(221, 221, 221);
+    color: rgb(119, 119, 119);
+    cursor: not-allowed;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-left: 0;
+}
+
+.paginator-wrapper a {
+    background: rgb(245, 245, 245);
+    border-color: rgb(221, 221, 221);
+    padding: 6px 9px;
+}
+
+.quick-search {
+    width: 40%;
+}
+
+.quick-search_form {
+    width: calc(100% - 60px);
+}
+
+.form-control {
+    font-size: .875rem !important;
+    height: calc(1.5em + .5rem + 2px) !important;
+    line-height: 1.5 !important;
+    padding: .25rem .5rem !important;
+}
+
+.datagrid-table-panel {
+    padding: 0.75rem;
+}
+
+.datagrid-table-wrapper {
+    overflow: auto;
+    display: flex;
+}

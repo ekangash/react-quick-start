@@ -1,0 +1,27 @@
+
+
+.fallback-loader {
+    box-sizing: border-box;
+    position: relative;
+    padding: 1.5rem;
+
+    &:after {
+        content: '';
+        display: block;
+        -webkit-animation: spinner-border 1.25s linear infinite;
+        animation: spinner-border 1.25s linear infinite;
+        border: 0.25em solid currentColor;
+        border-radius: 50%;
+        border-right-color: transparent;
+        color: var(--primary);
+        height: 2rem;
+        left: calc(50% - 10px);
+        margin: 15px auto;
+        position: absolute;
+
+        top: calc(50% - 30px);
+        vertical-align: text-bottom;
+        width: 2rem;
+        z-index: 99999;
+    }
+}

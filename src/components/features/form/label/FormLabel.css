@@ -1,0 +1,6 @@
+.form-label.required:after {
+    color: var(--danger);
+    content: '*';
+    font-weight: normal;
+    margin-left: 3px;
+}

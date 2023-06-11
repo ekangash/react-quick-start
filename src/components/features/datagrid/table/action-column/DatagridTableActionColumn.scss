@@ -1,0 +1,31 @@
+
+.datagrid-table-action-column {
+    &__cell {
+        position: absolute;
+        right: 0;
+        box-sizing: border-box;
+
+        &_body {
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__action {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        padding: 0 5px;
+
+        &:hover {
+            color: var(--dark)!important;
+            cursor: pointer;
+        }
+    }
+}
+
+tr:last-child .datagrid-table-action-column__cell {
+    border-bottom: 1px solid #dee2e6;
+}
